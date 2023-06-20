@@ -1,3 +1,29 @@
+Hosted link : https://my-portfolio-fd4d2.web.app/
+# Firebase Deployement Steps
+
+This website is hosted using firebase by the following steps.
+
+1. npm install -g firebase-tools (After creating account and a project in console)
+2. firebase login
+
+(If it says "firebase.ps1 cannot be loaded because running scripts is disabled on
+this system.")
+3. set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+4. Get-ExecutionPolicy
+5. Get-ExecutionPolicy -list
+
+6. firebase init
+--- Select Hosting with Github
+--- Use existing project and project name
+--- select directory name as "build"
+--- configure single app? N
+--- Github deploy? N
+
+7. npm run build
+8. firebase Deploy
+
+Youtube link: https://www.youtube.com/watch?v=5n1-wQFoZtU
+************************************************************************************
 
 # Getting Started with Create React App
 
