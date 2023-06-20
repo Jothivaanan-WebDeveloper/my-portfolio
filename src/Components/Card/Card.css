@@ -1,0 +1,43 @@
+.card {
+    width: 10rem;
+    height: 13rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+    border: 7px solid var(--orange);
+    box-shadow: var(--boxShadow);
+    border-radius: 20px;
+    padding: 0px 26px 2rem 26px;
+    z-index: 5;
+}
+
+.card>img {
+    transform: scale(0.5);
+    margin-bottom: -2rem;
+}
+
+.card> :nth-child(3) {
+    color: var(--gray);
+    font-size: 15px;
+}
+
+.c-button {
+    background: #ffffff;
+    box-shadow: 0px 19px 60px rgb(0, 0, 0, 0.08);
+    border-radius: 7px;
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+    color: #5290fd;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        width: 50%;
+        left: 0% !important;
+    }
+}
