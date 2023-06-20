@@ -1,9 +1,18 @@
 .works {
-    padding: 0 3rem 0 3rem;
+    padding: 0 3rem 0 13rem;
     display: flex;
     height: 50vh;
     /* text-align: center; */
     /* margin-top: 4rem; */
+}
+
+.w-button {
+    width: 30%;
+    color: white !important;
+}
+
+.w-button:hover {
+    color: var(--orange) !important;
 }
 
 .w-right {
@@ -95,7 +104,7 @@
 @media screen and (max-width: 480px) {
     .works {
         flex-direction: column;
-        height: 40rem;
+        height: 34rem;
         padding: 0;
         gap: 5rem;
         margin-left: .7rem;

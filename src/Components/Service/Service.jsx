@@ -18,7 +18,7 @@ const Service = () => {
         <div className='services' id='Service'>
 
             {/* Left side */}
-            <div className="awsome">
+            <div className="awsome ser-awsome">
                 <span
                     style={
                         colorMode ? { color: 'white' } : { color: 'black' }

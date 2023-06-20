@@ -25,16 +25,16 @@ const Works = () => {
                         }
                     >Worked for All these</span>
                     <span>Brands & Clients</span>
-                    <span
-                    style={
-                        colorMode ? { color: 'lightgray', visibility: 'none' } : { color: 'gray', visibility: 'none' }
-                    }
-                >
-                    Client satisfaction is the cornerstone of my work, and I take pride in consistently exceeding expectations. From startups to established businesses, 
-                    <br /> my clients have consistently expressed their utmost satisfaction with the quality, professionalism, and results delivered.
-                </span>
+                    {/* <span
+                        style={
+                            colorMode ? { color: 'lightgray', visibility: 'none' } : { color: 'gray', visibility: 'none' }
+                        }
+                    >
+                        Client satisfaction is the cornerstone of my work, and I take pride in consistently exceeding expectations. From startups to established businesses,
+                        <br /> my clients have consistently expressed their utmost satisfaction with the quality, professionalism, and results delivered.
+                    </span> */}
 
-                    <button className="button s-button">Hire Me</button>
+                    <button className="button w-button">Hire Me</button>
                 </>
 
                 {/* <div className="blur s-blur1"

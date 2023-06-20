@@ -40,6 +40,9 @@ margin-bottom: 2rem;
 
 @media screen and (max-width: 480px) {
     .portfolio img {
-        margin-left: -.5rem;
+        margin-left: -0.5rem;
+    }
+    .portfolio {
+        margin: 0rem 0rem 5rem 0rem;
     }
 }

@@ -26,7 +26,7 @@ const Contact = () => {
                             colorMode ? { color: 'white' } : { color: 'black' }
                         }
                     >Get in touch</span>
-                    <span>Contact me</span>
+                    <span>Leave a message</span>
                     {/* <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}>
                     </div> */}
                 </div>

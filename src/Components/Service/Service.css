@@ -65,6 +65,16 @@
         gap: 5rem;
         margin-left: .7rem;
     }
+    .ser-awsome {
+        margin-top: 8rem;
+    }
+    .awsome> :nth-child(1) {
+        font-size: 2rem;
+    }
+    
+    .awsome> :nth-child(2) {
+        font-size: 1.9rem;
+    }
     .cards {
         display: flex;
         flex-direction: column;

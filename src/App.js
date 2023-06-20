@@ -42,6 +42,8 @@ function App() {
         color: colorMode ? 'white' : 'black'
       }}
     >
+        <i class="fa-sharp fa-regular fa-jet-fighter-up fa-fade"></i>
+
       <motion.div
         className="progress-bar"
         style={{ scaleX: scrollYProgress }}
@@ -50,7 +52,9 @@ function App() {
         showButton &&
         <button
           className="go-to-top"
-          onClick={() => animateScroll.scrollTo(0)}>⬆️</button>
+          onClick={() => animateScroll.scrollTo(0)}>
+          ⬆️
+          </button>
       }
 
       <Navbar />

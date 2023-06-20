@@ -1,6 +1,6 @@
 .intro {
     display: flex;
-    height: 77vh;
+    height: 60vh;
     margin-top: 8rem;
 }
 
@@ -112,9 +112,30 @@
         flex-direction: column;
         margin-top: 0;
     }
+    .i-name>:nth-child(1) {
+        font-size: 2rem;
+    }
+    
+    .i-name>:nth-child(2) {
+        font-size: 2rem;
+    }
+    
     .i-right {
         transform: scale(0.8);
+        top: 3rem;
         left: -3rem;
+    }
+
+    .i-right>:nth-child(1) {
+        transform: scale(0.2);
+    }
+    
+    .i-right>:nth-child(2) {
+        transform: scale(0.67);
+    }
+    
+    .i-right>:nth-child(3) {
+        transform: scale(1.4);
     }
     .floatingDiv {
         position: absolute;
