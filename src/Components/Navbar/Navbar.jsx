@@ -2,6 +2,7 @@ import React from 'react';
 import './Navbar.css';
 import Toggle from './Toggle';
 import { Link } from 'react-scroll';
+import handleEmailClick from '../EmailUtils/EmailUtils';
 
 export const Navbar = () => {
     return (
@@ -33,12 +34,14 @@ export const Navbar = () => {
                             </Link> */}
                         </ul>
                     </div>
-                    <button className="button n-button">
+                    <button className="button n-button"
+                        onClick={handleEmailClick}
+                    >
                         Contact
                     </button>
                 </div>
             </div>
-            
+
         </div>
     )
 }

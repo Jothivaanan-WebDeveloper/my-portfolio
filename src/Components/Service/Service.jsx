@@ -4,7 +4,7 @@ import Card from '../Card/Card';
 import HeartEmoji from '../../img/heartemoji.png';
 import Glasses from '../../img/glasses.png';
 import Humble from '../../img/humble.png';
-import Resume from './sample.pdf';
+import Resume from './JothivananResume.pdf';
 import { useContext } from 'react';
 import { themeContext } from '../../Context';
 import { motion } from "framer-motion";
@@ -30,9 +30,9 @@ const Service = () => {
                         colorMode ? { color: 'lightgray' } : { color: 'gray' }
                     }
                 >
-                    I provide comprehensive services encompassing frontend, backend, and database solutions, ensuring seamless integration 
+                    I provide comprehensive services encompassing frontend, backend, and database solutions, ensuring seamless integration... 
                     <br />
-                    and exceptional performance for my clients ❤️.
+                    And exceptional performance for my clients ❤️.
                 </span>
 
                 <a href={Resume} download>

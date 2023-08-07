@@ -11,11 +11,13 @@ import Crown from '../../img/crown.png';
 import FloatingDiv from '../FloatingDiv/FloatingDiv';
 import { themeContext } from '../../Context';
 import { motion } from "framer-motion";
+import handleEmailClick from '../EmailUtils/EmailUtils';
 
 const Intro = () => {
     const theme = useContext(themeContext);
     const colorMode = theme.state.darkMode;
     const transition = { duration: 2, type: 'spring' }
+
     return (
         <>
             <div className="intro">
@@ -38,7 +40,9 @@ const Intro = () => {
                             producting the quality work...
                         </span>
                     </div>
-                    <button className="button i-button">
+                    <button className="button i-button"
+                        onClick={handleEmailClick}
+                    >
                         Hire Me
                     </button>
                     <div className="i-icons">

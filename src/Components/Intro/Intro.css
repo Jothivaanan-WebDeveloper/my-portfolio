@@ -31,7 +31,7 @@
 
 .i-name>:nth-child(3) {
     color: var(--gray);
-    font-size: 15px;
+    font-size: 17px;
     margin-top: 8px;
     font-weight: 100;
 }

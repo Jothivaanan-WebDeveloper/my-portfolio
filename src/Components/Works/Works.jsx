@@ -1,13 +1,13 @@
 import React from 'react';
 import './Works.css';
-import Upwork from '../../img/Upwork.png';
-import Fiverr from '../../img/fiverr.png';
-import Facebook from '../../img/Facebook.png';
-import Amazon from '../../img/amazon.png';
-import Shopify from '../../img/Shopify.png';
+import CET from '../../img/cet.png';
+import Gupshup from '../../img/gupshup.png';
+import Nipurna from '../../img/nipurna.png';
+import Emudhra from '../../img/emudhrapng.png';
 import { useContext } from 'react';
 import { themeContext } from '../../Context';
 import { motion } from "framer-motion";
+import handleEmailClick from '../EmailUtils/EmailUtils';
 
 const Works = () => {
     const theme = useContext(themeContext);
@@ -34,7 +34,10 @@ const Works = () => {
                         <br /> my clients have consistently expressed their utmost satisfaction with the quality, professionalism, and results delivered.
                     </span> */}
 
-                    <button className="button w-button">Hire Me</button>
+                    <button className="button w-button"
+                        onClick={handleEmailClick}
+                    >Hire Me
+                    </button>
                 </>
 
                 {/* <div className="blur s-blur1"
@@ -53,20 +56,21 @@ const Works = () => {
                     }
                 >
                     <div className="w-secCircle">
-                        <img src={Upwork} alt="Upwork" />
+                        {/* <img src={Upwork} alt="Upwork" /> */}
+                        <img src={CET} alt="CET" width={220} />
                     </div>
 
                     <div className="w-secCircle">
-                        <img src={Fiverr} alt="Fiverr" />
+                        <img src={Gupshup} alt="Gupshup" width={220} />
                     </div>
                     <div className="w-secCircle">
-                        <img src={Amazon} alt="Amazon" />
+                        {/* <img src={Nipurna} alt="Nipurna" /> */}
                     </div>
                     <div className="w-secCircle">
-                        <img src={Shopify} alt="Shopify" />
+                        <img src={Emudhra} alt="Emudhra" width={260} />
                     </div>
                     <div className="w-secCircle">
-                        <img src={Facebook} alt="Facebook" />
+                        <img src={Nipurna} alt="Nipurna" />
                     </div>
                 </motion.div>
                 {/* Background circles */}
