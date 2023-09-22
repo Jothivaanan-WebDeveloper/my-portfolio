@@ -46,9 +46,15 @@ const Intro = () => {
                         Hire Me
                     </button>
                     <div className="i-icons">
-                        <img src={Github} alt="" />
-                        <img src={Instagram} alt="" />
-                        <img src={Linkedin} alt="" />
+                        <a href='https://github.com/Jothivaanan-WebDeveloper' target='_blank'>
+                            <img src={Github} alt="Git Repo link" />
+                        </a>
+                        <a href='https://www.instagram.com/jman_and_channy/' target='_blank'>
+                            <img src={Instagram} alt="Instagram Page Link" />
+                        </a>
+                        <a href='https://www.linkedin.com/in/jothivanan/' target='_blank'>
+                            <img src={Linkedin} alt="LinkedIn Profile link" />
+                        </a>
                     </div>
                 </div>
 
@@ -69,7 +75,7 @@ const Intro = () => {
                         transition={transition}
                     // style={{ top: '-4%', left: '68%' }}
                     >
-                        <FloatingDiv image={Crown} txt1={'Web'} txt2={'Developer'} />
+                        <FloatingDiv image={Crown} txt1={'Frontend'} txt2={'Developer'} />
                     </motion.div>
 
                     <motion.div
@@ -79,7 +85,7 @@ const Intro = () => {
                         className='dev-content'
                     // style={{ top: '18rem', left: '0rem' }}
                     >
-                        <FloatingDiv image={Thumbup} txt1={'UI'} txt2={'Designer'} />
+                        <FloatingDiv image={Thumbup} txt1={'UI'} txt2={'Developer'} />
                     </motion.div>
                     {/* blur divs */}
                     {

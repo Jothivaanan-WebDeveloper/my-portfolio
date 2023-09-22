@@ -37,6 +37,7 @@ const Portfolio = () => {
             window.removeEventListener('resize', handleResize);
         };
     }, []);
+    
     return (
         <div className="portfolio" id='Portfolio'>
             <span

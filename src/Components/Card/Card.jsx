@@ -12,16 +12,17 @@ const Card = ({ emoji, heading, details }) => {
                 colorMode ? { background: '#2c2c2c', color: 'white' } : { background: 'white', color: 'black' }
             }
         >
-            <img src={emoji} alt="preview" />
+            <img src={emoji} alt="preview" style={{marginTop: '1.5rem'}} />
             <span>{heading}</span>
             <span
-            style={
-                colorMode ? { color: 'lightgray' } : { color: 'rgb(85, 81, 81)' }
-            }
-            >{details}</span>
-            <button className="c-button">
+                style={
+                    colorMode ? { color: 'lightgray' } : { color: 'rgb(85, 81, 81)' }
+                }
+            >{details}
+            </span>
+            {/* <button className="c-button">
                 More Info
-            </button>
+            </button> */}
         </div>
     )
 }

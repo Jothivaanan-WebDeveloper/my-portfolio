@@ -4,7 +4,7 @@ import Card from '../Card/Card';
 import HeartEmoji from '../../img/heartemoji.png';
 import Glasses from '../../img/glasses.png';
 import Humble from '../../img/humble.png';
-import Resume from './JothivananResume.pdf';
+import Resume from './JothivaananResume.pdf';
 import { useContext } from 'react';
 import { themeContext } from '../../Context';
 import { motion } from "framer-motion";
@@ -53,7 +53,7 @@ const Service = () => {
                     <Card
                         emoji={HeartEmoji}
                         heading={"Frontend"}
-                        details={"Html5, CSS3, Javascript, JQuery, ReactJS"}
+                        details={"Html5, CSS3, Javascript, JQuery, ReactJS, Bootstrap, MUI"}
                     />
                 </motion.div>
                 {/* Card 2 */}
@@ -65,11 +65,11 @@ const Service = () => {
                     <Card
                         emoji={Glasses}
                         heading={"Backend"}
-                        details={"Java, Node, AWS (Lambda, Amplify, API Gateway)"}
+                        details={"Java, AWS (Lambda, Amplify, API Gateway)"}
                     />
                 </motion.div>
                 {/* Card 3 */}
-                <motion.div
+                <motion.div 
                     initial={{ transform: 'rotateY(180deg)' }}
                     whileInView={{ transform: 'rotateY(0deg)' }}
                     transition={transition}
@@ -77,7 +77,7 @@ const Service = () => {
                     <Card
                         emoji={Humble}
                         heading={"Database"}
-                        details={"MySql, Postgres, MongoDB. DynamoDB"}
+                        details={"MySql, Postgres"}
                     />
                 </motion.div>
                 {/* <div className="blur s-blur2" style={{ background: 'var(--purple)' }}></div> */}

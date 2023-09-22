@@ -13,9 +13,15 @@ const Footer = () => {
       <div className="f-content">
         <span>jothivaananwebdeveloper@gmail.com</span>
         <div className="f-icons">
-          <Insta color="white" size="3rem" />
-          <Github color="white" size="3rem" />
-          <Linkedin color="white" size="3rem" />
+          <a href='https://github.com/Jothivaanan-WebDeveloper' target='_blank'>
+            <Github color="white" size="3rem" />
+          </a>
+          <a href='https://www.instagram.com/jman_and_channy/' target='_blank'>
+            <Insta color="white" size="3rem" />
+          </a>
+          <a href='https://www.linkedin.com/in/jothivanan/' target='_blank'>
+            <Linkedin color="white" size="3rem" />
+          </a>
         </div>
       </div>
     </div>
