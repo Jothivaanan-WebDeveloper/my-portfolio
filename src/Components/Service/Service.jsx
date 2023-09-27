@@ -76,8 +76,8 @@ const Service = () => {
                     style={{ top: '19rem', left: '12rem' }}>
                     <Card
                         emoji={Humble}
-                        heading={"Database"}
-                        details={"MySql, Postgres"}
+                        heading={"Others"}
+                        details={"Git, VS Code, MySql, Postgres"}
                     />
                 </motion.div>
                 {/* <div className="blur s-blur2" style={{ background: 'var(--purple)' }}></div> */}
