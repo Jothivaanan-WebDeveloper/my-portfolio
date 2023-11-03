@@ -42,7 +42,7 @@ function App() {
         color: colorMode ? 'white' : 'black'
       }}
     >
-        <i class="fa-sharp fa-regular fa-jet-fighter-up fa-fade"></i>
+        <i className="fa-sharp fa-regular fa-jet-fighter-up fa-fade"></i>
 
       <motion.div
         className="progress-bar"
