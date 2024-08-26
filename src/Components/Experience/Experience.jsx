@@ -13,7 +13,7 @@ const Experience = () => {
                     style={
                         colorMode ? { background: '#2c2c2c', color: 'white' } : { background: 'white', color: 'black' }
                     }
-                >2+</div>
+                >3+</div>
                 <span>Years </span>
                 <span>Experience</span>
             </div>

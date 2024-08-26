@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import './Portfolio.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import Sidebar from '../../img/sidebar.png';
 import Tindercat from '../../img/tindercats.png';
 import MemoryBook from '../../img/MemoryBook.png';
 import Timesheet from '../../img/Timesheet.png';
 import AssetManagement from '../../img/AssetManagement.png';
 import MovieSearch from '../../img/MovieSearch.png';
+import Kakashi from '../../img/kakashi.png';
+import ProCustomer from '../../img/Pro.png';
 import 'swiper/css';
 import "swiper/css/pagination";
 import { Pagination } from "swiper";
@@ -37,7 +38,7 @@ const Portfolio = () => {
             window.removeEventListener('resize', handleResize);
         };
     }, []);
-    
+
     return (
         <div className="portfolio" id='Portfolio'>
             <span
@@ -56,23 +57,31 @@ const Portfolio = () => {
             >
                 <SwiperSlide>
                     <h1 style={{ color: 'var(--orange)', fontWeight: 'bold' }}>Tinder Cats</h1>
-                    <a href="https://master.dtphj19qjf7pi.amplifyapp.com/"><img src={Tindercat} alt="Tindercats" /></a>
+                    <a href="https://master.dtphj19qjf7pi.amplifyapp.com/" target='_blank'><img src={Tindercat} alt="Tindercats" /></a>
                 </SwiperSlide>
-                <SwiperSlide>
-                    <h1 style={{ color: 'var(--orange)', fontWeight: 'bold' }}>Employee Timesheet Portal</h1>
-                    <img src={Timesheet} alt="Sidebar" />
-                </SwiperSlide>
+
                 <SwiperSlide>
                     <h1 style={{ color: 'var(--orange)', fontWeight: 'bold' }}>Movie Search Engine</h1>
-                    <a href="https://moviesearchengine-ab548.web.app/"><img src={MovieSearch} alt="MovieSearch" /></a>
+                    <a href="https://moviesearchengine-ab548.web.app/" target='_blank'><img src={MovieSearch} alt="MovieSearch" /></a>
                 </SwiperSlide>
+
+                <SwiperSlide>
+                    <h1 style={{ color: 'var(--orange)', fontWeight: 'bold' }}>Kakashi's Journey</h1>
+                    <a href="https://kakashi-portfolio.web.app" target='_blank'><img src={Kakashi} alt="Kakashi" /></a>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                    <h1 style={{ color: 'var(--orange)', fontWeight: 'bold' }}>Employee Timesheet Portal</h1>
+                    <img src={Timesheet} alt="Timesheet" />
+                </SwiperSlide>
+
                 <SwiperSlide>
                     <h1 style={{ color: 'var(--orange)', fontWeight: 'bold' }}>Asset Management Dashboard</h1>
-                    <img src={AssetManagement} alt="Sidebar" />
+                    <img src={AssetManagement} alt="Asset" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <h1 style={{ color: 'var(--orange)', fontWeight: 'bold' }}>Memory Book</h1>
-                    <img src={MemoryBook} alt="Sidebar" />
+                    <h1 style={{ color: 'var(--orange)', fontWeight: 'bold' }}>Pro Customer</h1>
+                    <img src={ProCustomer} alt="ProCustomer" />
                 </SwiperSlide>
             </Swiper>
         </div>

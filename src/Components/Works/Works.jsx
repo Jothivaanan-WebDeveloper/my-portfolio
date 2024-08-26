@@ -4,6 +4,7 @@ import CET from '../../img/cet.png';
 import Gupshup from '../../img/gupshup.png';
 import Nipurna from '../../img/nipurna.png';
 import Emudhra from '../../img/emudhrapng.png';
+import Tentamus from '../../img/TentamusGroup.png';
 import { useContext } from 'react';
 import { themeContext } from '../../Context';
 import { motion } from "framer-motion";
@@ -12,7 +13,30 @@ import handleEmailClick from '../EmailUtils/EmailUtils';
 const Works = () => {
     const theme = useContext(themeContext);
     const colorMode = theme.state.darkMode;
-    const transition = { duration: 4, type: 'spring' }
+    const transition = { duration: 4, type: 'spring' };
+
+    const companyNames = [
+        {
+            title: CET,
+            width: 220
+        },
+        {
+            title: Gupshup,
+            width: 220
+        },
+        {
+            title: Nipurna,
+            width: 'auto'
+        },
+        {
+            title: Emudhra,
+            width: 260
+        },
+        {
+            title: Tentamus,
+            width: 260
+        }
+    ]
 
     return (
         <div className="works">
@@ -55,23 +79,14 @@ const Works = () => {
                         colorMode ? { background: "#2c2c2c", color: "white" } : { background: "white", color: "black" }
                     }
                 >
-                    <div className="w-secCircle">
-                        {/* <img src={Upwork} alt="Upwork" /> */}
-                        <img src={CET} alt="CET" width={220} />
-                    </div>
+                    {
+                        companyNames.map((el) => (
+                            <div className="w-secCircle">
+                                <img src={el.title} alt={el.title} width={el.width} />
+                            </div>
+                        ))
+                    }
 
-                    <div className="w-secCircle">
-                        <img src={Gupshup} alt="Gupshup" width={220} />
-                    </div>
-                    <div className="w-secCircle">
-                        {/* <img src={Nipurna} alt="Nipurna" /> */}
-                    </div>
-                    <div className="w-secCircle">
-                        <img src={Emudhra} alt="Emudhra" width={260} />
-                    </div>
-                    <div className="w-secCircle">
-                        <img src={Nipurna} alt="Nipurna" />
-                    </div>
                 </motion.div>
                 {/* Background circles */}
                 <div className="w-backCircle blueCircle"></div>
